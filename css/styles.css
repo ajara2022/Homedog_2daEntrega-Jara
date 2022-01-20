@@ -47,7 +47,7 @@ body{
     width: 100%;
     height: 2px;
     background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
-    color: transparent;  
+    color: transparent; 
     z-index: 1;
     transform: scaleX(0);
     transform-origin: center;
@@ -250,6 +250,7 @@ body{
 /*Pagina de contacto*/
 .contact-box .card{
     background-color: rgba(237,211,204,1);
+    z-index: 10;
 }
 
 .contact-box .form-contact {
@@ -258,6 +259,7 @@ body{
     align-items: center;
     border-radius: 20px;
     width:80%;
+    z-index: 0;
 }
   
 .form-control, .form-select {
@@ -286,11 +288,12 @@ body{
 
     .header .navbar {
         background-color: rgb(237,211,204) !important;
-        padding: 10px;
     }
-    
-    .header .navbar .nav-item{
+
+    .header .navbar .nav-item .nav-link {
         font-size:1rem;
+        padding: 0px;
+        margin: 5px;
     }
     
 }
